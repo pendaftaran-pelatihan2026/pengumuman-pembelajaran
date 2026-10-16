@@ -1,54 +1,72 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informasi Pembelajaran</title>
+
+    <!-- Informasi halaman -->
+    <title>Informasi Pembelajaran | Pelatihan 2026</title>
+    <meta name="description" content="Informasi pendaftaran pelatihan, panduan pendaftaran, informasi pembelajaran, dan materi pelatihan tahun 2026.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#123b68">
+
+    <!-- Metadata untuk pratinjau tautan -->
+    <meta property="og:title" content="Informasi Pembelajaran">
+    <meta property="og:description" content="Informasi pendaftaran, panduan, dan materi pembelajaran pelatihan tahun 2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pendaftaran-pelatihan2026.github.io/pengumuman-pembelajaran/">
+    <meta property="og:locale" content="id_ID">
 
     <style>
-        .pengumuman {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
-            background-color: #f0f7ff;
-            border-left: 6px solid #2563eb;
-            border-radius: 12px;
-            font-family: Arial, sans-serif;
-            color: #333333;
-            line-height: 1.6;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        * {
             box-sizing: border-box;
         }
 
+        body {
+            margin: 0;
+            padding: 15px;
+            background-color: #f8fafc;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .pengumuman {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-left: 6px solid #2563eb;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
         .pengumuman h2 {
-            margin-top: 0;
-            margin-bottom: 20px;
+            margin: 0 0 20px;
             color: #1d4ed8;
             font-size: 24px;
             line-height: 1.4;
         }
 
         .pengumuman p {
-            margin-top: 0;
-            margin-bottom: 12px;
-            font-size: 14px;
+            margin: 0 0 15px;
+            font-size: 15px;
         }
 
         .tanggal {
-            display: block;
-            padding: 12px 16px;
-            margin: 10px 0 20px;
+            margin: 15px 0 22px;
+            padding: 14px 18px;
             background-color: #dbeafe;
             color: #121212;
             border-radius: 8px;
-            font-size: 15px;
-            font-weight: bold;
+            border: 1px solid #bfdbfe;
         }
 
         .tanggal p {
             margin: 5px 0;
-            font-size: 14px;
+            font-size: 15px;
         }
 
         .pengumuman a {
@@ -63,37 +81,65 @@
             text-decoration: underline;
         }
 
-        .tombol-panduan {
+        .tombol {
             display: inline-block;
             margin: 5px 0 15px;
             padding: 11px 18px;
             background-color: #2563eb;
             color: #ffffff !important;
-            border-radius: 6px;
+            border-radius: 7px;
+            text-align: center;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.2s ease;
         }
 
-        .tombol-panduan:hover {
+        .tombol:hover {
             background-color: #1d4ed8;
-            color: #ffffff !important;
+            text-decoration: none !important;
+        }
+
+        .tombol-hijau {
+            background-color: #15803d;
+        }
+
+        .tombol-hijau:hover {
+            background-color: #166534;
         }
 
         .pemisah {
             margin: 25px 0;
             border: none;
             height: 2px;
-            background-color: #123b68;
+            background-color: #dbeafe;
         }
 
         .penutup {
-            margin-top: 20px;
+            margin-top: 25px !important;
             color: #475569;
         }
 
+        .catatan {
+            padding: 12px 15px;
+            background-color: #f1f5f9;
+            border-radius: 8px;
+            font-size: 14px !important;
+        }
+
+        footer {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            text-align: center;
+            color: #64748b;
+            font-size: 12px;
+        }
+
         @media (max-width: 600px) {
+            body {
+                padding: 8px;
+            }
+
             .pengumuman {
-                margin: 15px;
+                margin: 10px auto;
                 padding: 20px;
             }
 
@@ -101,21 +147,19 @@
                 font-size: 21px;
             }
 
-            .pengumuman p {
-                font-size: 15px;
-            }
-
-            .tanggal {
-                padding: 10px 12px;
-            }
-
+            .pengumuman p,
             .tanggal p {
                 font-size: 14px;
             }
 
-            .tombol-panduan {
+            .tanggal {
+                padding: 12px;
+            }
+
+            .tombol {
                 display: block;
-                text-align: center;
+                width: 100%;
+                padding: 12px;
             }
         }
     </style>
@@ -123,55 +167,103 @@
 
 <body>
 
-    <div class="pengumuman">
+    <main class="pengumuman">
 
         <!-- INFORMASI PENDAFTARAN -->
-        <h2>📢 Informasi Pendaftaran Pelatihan</h2>
+        <section>
+            <h2>📢 Informasi Pendaftaran Pelatihan</h2>
 
-        <p>
-            Diberitahukan kepada seluruh calon peserta bahwa
-            pendaftaran pelatihan dibuka pada tanggal:
-        </p>
-
-        <div class="tanggal">
-            <p>1. Public Speaking: 22 Oktober s.d. 1 November 2026</p>
             <p>
-                2. Kompetensi Pengadaan Barang/Jasa Level-1:
-                22 Oktober s.d. 1 November 2026
+                Diberitahukan kepada seluruh calon peserta bahwa
+                pendaftaran pelatihan dibuka pada tanggal berikut:
             </p>
-        </div>
 
-        <p>
-            <strong>Pendaftaran pelatihan dapat diakses melalui tautan berikut:</strong><br>
-            <a href="https://elearning.cilacapkab.go.id"
-               target="_blank"
-               rel="noopener noreferrer">
-                https://elearning.cilacapkab.go.id
+            <div class="tanggal">
+                <p>
+                    <strong>1. Public Speaking</strong><br>
+                    22 Oktober s.d. 1 November 2026
+                </p>
+
+                <p>
+                    <strong>2. Kompetensi Pengadaan Barang/Jasa Level-1</strong><br>
+                    22 Oktober s.d. 1 November 2026
+                </p>
+            </div>
+
+            <p>
+                <strong>🔗 Pendaftaran Pelatihan</strong><br>
+                Silakan klik tombol berikut untuk mengakses
+                website pendaftaran pelatihan.
+            </p>
+
+            <a
+                class="tombol"
+                href="https://elearning.cilacapkab.go.id"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka Website Pendaftaran
             </a>
-        </p>
 
-        <p>
-            <strong>Panduan pendaftaran dapat diakses melalui tautan berikut:</strong><br>
-            <a href="https://drive.google.com/file/d/1lJVOD0SsRdwsrAa2154BeaZR7smVzX9J/view?usp=sharing"
-              target="_blank">
-              Buka Panduan Pendaftaran disini 
-           </a>
-        </p>
-        <p>
-            <strong></strong>Bagi peserta yang telah terdaftar, silakan mengunjungi halaman website melalui tautan berikut : </strong><br>
-            <a href="https://pendaftaran-pelatihan2026.github.io/pembelajaran/"
-                target="_blank">
-                Informasi Pembelajaran
-           </a> <br> ini untuk memperoleh informasi dan mengakses materi pembelajaran
-            yang telah disediakan.</p>      
-            
-       <p class="penutup">
-            Terima kasih atas kerja sama Anda.
-            <br>
-            Selamat mengikuti pelatihan dan selamat belajar!
-        </p>
+            <p>
+                <strong>📘 Panduan Pendaftaran</strong><br>
+                Silakan membaca panduan pendaftaran sebelum
+                melakukan proses pendaftaran.
+            </p>
 
-    </div>
+            <a
+                class="tombol tombol-hijau"
+                href="https://drive.google.com/file/d/1lJVOD0SsRdwsrAa2154BeaZR7smVzX9J/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka Panduan Pendaftaran
+            </a>
+        </section>
+
+        <hr class="pemisah">
+
+        <!-- INFORMASI PEMBELAJARAN -->
+        <section>
+            <h2>📚 Informasi Pembelajaran</h2>
+
+            <p>
+                Bagi peserta yang telah terdaftar, silakan
+                mengunjungi halaman pembelajaran melalui tautan berikut
+                untuk memperoleh informasi dan mengakses materi
+                pembelajaran yang telah disediakan.
+            </p>
+
+            <a
+                class="tombol"
+                href="https://pendaftaran-pelatihan2026.github.io/pembelajaran/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Buka Informasi Pembelajaran
+            </a>
+
+            <p class="catatan">
+                <strong>Perhatian:</strong> Pastikan Anda telah
+                terdaftar sebagai peserta pelatihan sebelum mengakses
+                informasi dan materi pembelajaran.
+            </p>
+        </section>
+
+        <hr class="pemisah">
+
+        <!-- PENUTUP -->
+        <section>
+            <p class="penutup">
+                Terima kasih atas perhatian dan kerja sama Anda.
+                <br>
+                Selamat mengikuti pelatihan dan selamat belajar!
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        Informasi Pembelajaran &bull; Tahun 2026
+    </footer>
 
 </body>
 </html>
+```
